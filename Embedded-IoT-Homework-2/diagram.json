@@ -37,6 +37,13 @@
       "top": -25,
       "left": 260,
       "attrs": { "value": "220" }
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": -200,
+      "left": 230,
+      "attrs": { "i2cAddress": "0x3C" }
     }
   ],
   "connections": [
@@ -45,7 +52,11 @@
     ["led1:C", "esp:GND.1", "black", []],
     ["esp:19", "r2:1", "green", []],
     ["r2:2", "led2:A", "green", []],
-    ["led2:C", "esp:GND.2", "black", []]
+    ["led2:C", "esp:GND.2", "black", []],
+    ["esp:21", "oled1:SDA", "blue", []],
+    ["esp:22", "oled1:SCL", "yellow", []],
+    ["esp:3V3", "oled1:VCC", "orange", []],
+    ["esp:GND.2", "oled1:GND", "black", []]
   ],
   "dependencies": {}
 }
