@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Q2 Novell Services Login</title>
+<style>body{font-family:Georgia,serif;font-size:14px;color:#333}h2{text-align:center;font-weight:normal}
+table{margin:auto}td{padding:2px 4px;vertical-align:middle}input[type=text],input[type=password]{width:230px}</style></head>
+<body>
+<h2>Novell Services Login</h2>
+<form><table>
+<tr><td>Username:</td><td><input type="text" name="user"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pass"></td></tr>
+<tr><td>City of Employment:</td><td><input type="text" name="city"></td></tr>
+<tr><td>Web server:</td><td><select name="server"><option>--- Choose a server ---</option><option>Apache</option><option>IIS</option></select></td></tr>
+<tr><td>Please specify your role:</td><td>
+<input type="radio" name="role" value="admin"> Admin<br><input type="radio" name="role" value="eng"> Engineer<br>
+<input type="radio" name="role" value="mgr"> Manager<br><input type="radio" name="role" value="guest"> Guest</td></tr>
+<tr><td>Single Sign-on to the following:</td><td>
+<input type="checkbox" name="sso" value="mail"> Mail<br><input type="checkbox" name="sso" value="pay"> Payroll<br>
+<input type="checkbox" name="sso" value="self"> Self-service</td></tr>
+<tr><td></td><td><input type="submit" value="Login"> <input type="reset" value="Reset"></td></tr>
+</table></form></body></html>
