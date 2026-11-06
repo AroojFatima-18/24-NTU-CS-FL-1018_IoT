@@ -9,11 +9,11 @@ void setup() {
 void loop() {
     for (int i = 0; i <= 255; i++) {
         dacWrite(DAC_PIN, i);
-        delay(20);
+        delay(5);
     }
 
     for (int i = 255; i >= 0; i--) {
         dacWrite(DAC_PIN, i);
-        delay(20);
+        delay(50);
     }
 }
